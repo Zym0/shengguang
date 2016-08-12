@@ -1,0 +1,156 @@
+@charset "utf-8";
+html,body{height: 100%;}
+.web_wrap{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	margin: 0 auto;
+}
+.web{
+	height: 100%;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: black;
+	z-index: 1;
+	-webkit-transition: all 300ms ease-out;
+	overflow: hidden;
+}
+/*搜索弹窗样式*/
+.page.search{/*一开始在主页面的上方隐藏*/
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	transition: all 300ms ease-out;
+}
+#search:checked~.search{/*用户信息弹层进场状态*/
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/*弹窗公用头部*/
+.page_head{
+	padding-bottom: 16px;
+	border-bottom: 1px solid #303030;
+}
+.page_head .left{
+	float: left;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #b60005;
+	border-radius:50%;
+	margin-left: 13px;
+	margin-top: 20px;
+}
+.page_head .left .fa{
+	color: #FFFFFF;
+	font-size: 34px;
+	vertical-align: middle;
+}
+.page_head .right{
+	float: right;
+	width: 532px;
+	height: 49px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #fff;
+	margin-right: 20px;
+	margin-top: 19px;
+}
+.page_head .right button{
+	padding-left: 15px;
+	padding-top: 11px;
+	background: none;
+}
+.page_head .right button .fa{
+	font-size: 29px;
+	color:#FFFFFF;
+}
+.page_head .right input{
+	line-height: 49px;
+	font-size: 27px;
+	color: #FFFFFF;
+	width: 480px;
+	border: none;
+	background: none;
+	padding: 0 17px;
+	box-sizing: border-box;
+}
+/*控制input框中的提示语*/
+.page_head .right input::-webkit-input-placeholder{
+	font-size: 29px;
+}
+.page_body{
+	position: relative;
+	height: 100%;
+	background: #f1f1f1;
+}
+  /*弹出窗的主题内容*/
+ .page_search_index{
+ 	padding: 30px;
+ 	height: 100%;
+ }
+ .page_search_index h2{
+ 	font-size: 27px; 
+ 	color: #211d1d;
+ }
+.page_search_index .keyword_list{
+	margin-top: 16px;
+	/*text-align: justify;把容器中的内容往左右两边平均分配间隔*/
+}
+.page_search_index .keyword_list a{
+	display: inline-block;
+	padding: 13px 18px;
+	border: 1px solid #e4e4e4;
+	background: #FFFFFF;
+	margin-bottom: 10px;
+	margin-right: 8px;
+	color: #8B8B8B;
+	font-size: 29px;
+}
+.page_search_list{/*搜索记录弹窗开始状态*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #F1F1F1;
+	padding: 35px 30px;
+	-webkit-box-sizing: border-box;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 300ms ease-out;
+	overflow-y: scroll;
+}
+#page_search_list:checked~.page_search_list{
+	/*搜索记录弹窗结束状态*/
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.page_search_list .item{
+	padding: 23px 17px;
+	background: #FFFFFF;
+	color: #898989;
+	margin-bottom: 14px;
+}
+.page_search_list .item h2{
+	font-size: 27px;
+	color: #595757;
+}
+.page_search_list .item p{
+	font-size: 22px;
+	margin-top: 22px;
+	line-height: 30px;
+	margin-bottom: 16px;
+}
+.page_search_list .item span{
+	font-size: 18px;
+	margin-right: 32px;
+	
+}

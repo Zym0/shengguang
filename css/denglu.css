@@ -1,0 +1,252 @@
+@charset "utf-8";
+html,body{height: 100%;}
+.web_wrap{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	margin: 0 auto;
+}
+.web{
+	height: 100%;
+}
+.clearfix{
+	clear: both;
+}
+
+/*登录页面*/
+
+/*用户信息弹窗样式*/
+.slideMenu{/*用户信息弹层一开始在页面的左侧*/
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: all 300ms ease-out;
+}
+#slideMenu:checked~.slideMenu{/*用户信息弹层进场状态*/
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+/*输入用账号和密码*/
+.slideMenu{
+	background: #222;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slideMenu img{
+	margin-left: 248px;
+	margin-top: 193px;
+}
+.slideMenu .icon{
+	background: #303030;
+	height: 53px;
+	width: 61px;
+	float: left;
+	text-align: center;
+}
+.slideMenu .icon .fa{
+	font-size: 30px;
+	color: #cacaca;
+	line-height: 53px;
+	vertical-align: middle;
+}
+.slideMenu .username{
+	margin-left: 73px;
+	margin-top: 47px;
+}
+.slideMenu input{
+	float: left;
+	height:51px ;
+	width: 391px;
+	background: #3d3d3d;
+	border: 0;
+	color: #cdcdcd;
+	font-size: 19px;
+	padding-left: 40px;
+}
+.slideMenu .password{
+	background: #303030;
+	height: 53px;
+	width: 61px;
+	float: left;
+	text-align: center;
+}
+.slideMenu .username .icon2{
+	padding-top: 16px;
+}
+.slideMenu .forget{
+	color: #cdcdcd;
+	font-size: 20px;
+	text-align: right;
+	margin: 27px 81px 58px 0;
+}
+.slideMenu button{
+	width: 492px;
+	height: 53px;
+	margin-left: 73px;
+	color: #cdcdcd;
+	font-size: 21px;
+	text-align: center;
+	border: 1px solid #B60005;
+	background: #303030;
+	letter-spacing: 10px;
+	margin-bottom: 14px;
+}
+.button button:hover,
+.button button.active{
+	background: #B60005;
+}
+
+
+
+/*已经登录页面*/
+.logged{
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	transition: all 300ms ease-out;
+}
+#logged:checked~.logged{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+.logged .head_pic{
+	width: 134px;
+	margin: 0 auto;
+}
+.logged .head_pic img{
+	border-radius: 50%;
+	margin-top: 33px;
+}
+.logged .head_pic span{
+	background: #ff0000;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	font-size: 16px;
+	text-align: center;
+	color: #FFFFFF;
+	display: block;
+	line-height: 33px;
+	position: absolute;
+	top: 120px;
+	left: 354px;
+}
+.logged .names{
+	text-align: center;
+}
+.logged .names h3{
+	color: #FFFFFF;
+	font-size: 24px;
+	margin-top: 15px;
+	display: inline;
+	margin-left: 20px;
+}
+.logged .names button{
+	display: inline;
+	width: 94px;
+	height: 22px;
+	background: black;
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	margin-left: 10px;
+}
+.logged .stars{
+	text-align: center;
+}
+.logged .stars .fa{
+	font-size: 20px;
+	color: #eeca02;
+	padding-left: 13px;
+	padding-top: 10px;
+}
+.logged .fans{
+	font-size: 23px;
+	color: #fff;
+	text-align: center;
+	margin-top: 13px;
+}
+.logged .fans span{
+	color: #B60005;
+	padding-left: 10px;
+}
+
+.logged .my{
+	margin-top: 21px;
+	text-align: center;
+}
+.logged .my button{
+	width: 220px;
+	height: 52px;
+	border-radius: 26px;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+}
+.logged .my .collect,.share{
+	display: inline;
+}
+.logged .my .collect button{
+	background: #b60005;
+}
+.logged .my .share button{
+	background: #cdcdcd;
+	margin-left: 22px;
+}
+.logged .my .line{
+	width: 100%;
+	height: 23px;
+	background:#303030;
+	margin-top: 22px;
+}
+/*页面下方的菜单*/
+.logged .menu{
+	padding: 0 33px 0 31px;
+	margin-top: 21px;
+}
+.logged .menu .menu_title h3{
+	height: 73px;
+	line-height: 73px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #7f7f7f;
+	font-size: 23px;
+}
+.logged .menu .menu_title h3 .fa{
+	font-size: 24px;
+	margin-top: 24px;
+}
+.logged .menu .menu_title ul{
+	padding-left: 85px;
+	padding-right: 57px;
+	margin: 0 auto;
+}
+.logged .menu .menu_title li{
+	line-height: 89px;
+	height: 89px;
+	border-bottom: 1px solid #2f2f2f;
+	font-size: 21px;
+	text-align: center;
+}
+.logged .menu_title li a{
+	color: white;
+	text-decoration: none;
+}
+.logged .menu_title li a:hover{
+	color: #f2bc47;
+}
+.logged .out{
+	padding-top: 22px;
+	text-align: center;
+}
+.logged .out button{
+	width: 180px;
+	height: 50px;
+	background: #B60005;
+	color: white;
+	font-size: 22px;
+	letter-spacing: 10px;
+	border-radius: 25px;
+}

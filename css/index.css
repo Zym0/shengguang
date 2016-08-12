@@ -1,0 +1,136 @@
+@charset "utf-8";
+.web_wrap{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	margin: 0 auto;
+}
+.web{
+	height: 100%;
+}
+section.content_wrap .mid1{
+	background: url(../img/bg.jpg) no-repeat;
+	height:221px ;
+	width: 100%;
+	margin-top: 8px;
+}
+section.content_wrap .word{
+	height: 56px;
+	width: 242px;
+	background: #FFFFFF;
+	font-size: 25px;
+	text-align: center;
+	line-height: 56px;
+	color: #b20000;
+	position: absolute;
+	top:151px;
+	left: 28px;
+	display: inline;
+}
+
+section.content_wrap button{
+	width: 62px;
+	height: 56px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 151px;
+	left: 271px;
+	border-left:1px solid #B20000;
+}
+section.content_wrap .butt .fa{
+	vertical-align: middle;
+	color: #B20000;
+}
+section.content_wrap .butt i:first-child{
+	position: absolute;
+	top:9px;
+	left: 16px;
+}
+/*第二篇*/
+section .mid2{
+	background: url(../img/bg2.jpg) no-repeat;
+	width: 100%;
+	height: 354px;
+	position: absolute;
+}
+section .mid2 .down{
+	background: rgba(44,44,44,0.5);
+	width: 100%;
+	height: 104px;
+	position: relative;
+	top: 251px;
+}
+section .down .headline{
+	font-size: 26px;
+	color: #FFFFFF;
+	padding-left: 30px;
+	padding-top: 24px;
+}
+section .down .pv{
+	font-size: 18px;
+	color: 	#fff;
+	padding-top: 12px;
+	float: left;
+}
+section .down .pv .fa{
+	padding-left: 30px;
+	padding-right: 10px;
+}
+section .down .time{
+	float: right;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 12px;
+	padding-right: 16px;
+}
+section .news{
+	position: relative;
+	top: 400px;
+	margin-left: 28px;
+}
+section .news img{
+	float: left;
+}
+section .news .infromation{
+	float: left;
+	width: 360px;
+	padding-left: 17px;
+}
+section .news .title{
+	font-size: 21px;
+	color: #010101;
+}
+section .news .message{
+	font-size: 20px;
+	color: #c5c5c5;
+	padding-top: 12px;
+}
+section .news .details{
+	font-size: 14px;
+	color: #939393;
+	text-align: right;
+}
+section .news .details i{
+	padding-left: 19px;
+}
+section .news .cut{
+	width: 585px;
+	height: 1px;
+	background: #cecece;
+	position: relative;
+	top:172px;
+}
+section .news2{
+	margin-top: 60px;
+}
+section .more{
+	position: relative;
+	top: 460px;
+	font-size:21px ;
+	text-align: center;
+	margin-bottom: 32px;
+}
+section .more a{
+	color: #bbb;
+}
